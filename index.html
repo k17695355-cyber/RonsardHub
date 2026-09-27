@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoleRonsardGPT - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LEFT NAVIGATION SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <span class="logo-icon">ER</span> EcoleRonsardGPT
+        </div>
+        <ul class="sidebar-menu">
+            <li class="menu-item active" onclick="switchTab('dashboard')">🏠 Dashboard</li>
+            <li class="menu-item" onclick="switchTab('learn')">📚 Learn</li>
+            <li class="menu-item" onclick="switchTab('quizzes')">📝 Quizzes</li>
+            <li class="menu-item" onclick="switchTab('study-gpt')">🌀 Study GPT</li>
+            <li class="menu-item" onclick="switchTab('about')">ℹ️ About</li>
+        </ul>
+        <div class="theme-toggle">
+            🌙 Dark mode
+        </div>
+    </div>
+
+    <!-- MAIN DASHBOARD HUB VIEWPORT -->
+    <div class="main-content">
+        
+        <!-- HEADER LEVEL TOP STATUS BAR -->
+        <div class="top-header">
+            <h2>Dashboard</h2>
+            <div class="curriculum-badge">Cambridge Curriculum • Grade 7</div>
+        </div>
+
+        <!-- TAB CONTENT VIEW A: DASHBOARD HUB INTERFACE -->
+        <div id="tab-dashboard" class="tab-view active">
+            <!-- HERO LANDING HEADER BANNER PANEL -->
+            <div class="hero-banner">
+                <h1>Learn smarter with EcoleRonsardGPT.</h1>
+                <p>Your digital learning hub for Cambridge-style learning, revision and quizzes from Grade 1 to Grade 12.</p>
+                <button class="hero-btn" onclick="switchTab('quizzes')">Start a quiz →</button>
+            </div>
+
+            <!-- CARD MATRIX TRACKING METRICS GRID ROW -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-title">Current Grade</span>
+                    <span class="metric-value">7</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">Best Quiz Score</span>
+                    <span class="metric-value">0%</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">Quizzes Completed</span>
+                    <span class="metric-value">0</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">Grades Available</span>
+                    <span class="metric-value">12</span>
+                </div>
+            </div>
+
+            <!-- DYNAMIC GRADE BUTTON GRID SYSTEM SELECTION PANEL -->
+            <div class="grade-section">
+                <h3>Choose your grade</h3>
+                <span class="grade-subtitle">Grade 1–12</span>
+                <div class="grade-grid">
+                    <button class="grade-btn">1 <br><small>Grade</small></button>
+                    <button class="grade-btn">2 <br><small>Grade</small></button>
+                    <button class="grade-btn">3 <br><small>Grade</small></button>
+                    <button class="grade-btn">4 <br><small>Grade</small></button>
+                    <button class="grade-btn">5 <br><small>Grade</small></button>
+                    <button class="grade-btn">6 <br><small>Grade</small></button>
+                    <button class="grade-btn active">7 <br><small>Grade</small></button>
+                    <button class="grade-btn">8 <br><small>Grade</small></button>
+                    <button class="grade-btn">9 <br><small>Grade</small></button>
+                    <button class="grade-btn">10 <br><small>Grade</small></button>
+                    <button class="grade-btn">11 <br><small>Grade</small></button>
+                    <button class="grade-btn">12 <br><small>Grade</small></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT VIEW B: STUDY GPT WORKING ENVIRONMENT -->
+        <div id="tab-study-gpt" class="tab-view">
+            <div class="module-placeholder">
+                <h2>🌀 Study GPT Assistant Terminal</h2>
+                <p>This is where we will hook up your ChatGPT chat loop interface next!</p>
+            </div>
+        </div>
+
+        <!-- FALLBACK WORKSPACE芯片S FOR EXTRA BUTTON LAYOUT SECTIONS -->
+        <div id="tab-learn" class="tab-view"><div class="module-placeholder"><h2>📚 Learn Platform Section</h2><p>Course content catalog modules processing...</p></div></div>
+        <div id="tab-quizzes" class="tab-view"><div class="module-placeholder"><h2>📝 Active Quizzes Console</h2><p>Testing matrices loading profile environments...</p></div></div>
+        <div id="tab-about" class="tab-view"><div class="module-placeholder"><h2>ℹ️ About École Ronsard</h2><p>Bilingual international curriculum established in 2009 details workspace...</p></div></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
